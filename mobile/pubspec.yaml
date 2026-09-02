@@ -1,0 +1,39 @@
+name: legal_metrology_checker
+description: Offline-first Legal Metrology (Packaged Commodities) Rules, 2011 compliance checker.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+  flutter: ">=3.19.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # --- On-device ML (Google ML Kit — runs offline after model download) ---
+  google_mlkit_barcode_scanning: ^0.13.1
+  google_mlkit_text_recognition: ^0.15.0
+
+  # --- Image capture ---
+  image_picker: ^1.1.2
+
+  # --- Online-optional product registry lookups ---
+  http: ^1.2.2
+  connectivity_plus: ^6.0.5
+
+  # --- Local persistence of the API key / settings ---
+  shared_preferences: ^2.3.2
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/models/
+    - assets/fixtures/

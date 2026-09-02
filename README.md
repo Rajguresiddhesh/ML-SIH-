@@ -23,9 +23,13 @@ The pipeline is heterogeneous:
 
 ## Integrating into an existing Flutter app
 
-See **[INTEGRATION.md](INTEGRATION.md)** — a step-by-step procedure for adding
-this pipeline to an existing Flutter project (as a local package) and rebuilding
-its APK, including the Android/iOS platform config and the exact call sites.
+- **[INTEGRATION.md](INTEGRATION.md)** — generic procedure: add this pipeline to
+  any existing Flutter project (as a local package) and rebuild the APK, with
+  the Android/iOS platform config and call sites.
+- **[INTEGRATION_SIH2026.md](INTEGRATION_SIH2026.md)** — the same, specialised
+  for `httpsaryxn/SIH_2026` (FreshLabel Pro): exact file edits, the
+  `ComplianceReport → ProductModel / ConsumerScanModel` mapping, and a
+  backend-side alternative that fills that repo's existing `TODO`.
 
 ## Quick start (standalone)
 

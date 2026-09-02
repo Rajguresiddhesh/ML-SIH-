@@ -21,7 +21,13 @@ The pipeline is heterogeneous:
 - **OCR / barcode** — Google ML Kit on-device models.
 - **LLM / registry lookups** — remote, online-optional.
 
-## Quick start
+## Integrating into an existing Flutter app
+
+See **[INTEGRATION.md](INTEGRATION.md)** — a step-by-step procedure for adding
+this pipeline to an existing Flutter project (as a local package) and rebuilding
+its APK, including the Android/iOS platform config and the exact call sites.
+
+## Quick start (standalone)
 
 ```bash
 cd mobile
